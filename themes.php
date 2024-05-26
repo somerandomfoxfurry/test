@@ -117,7 +117,6 @@ class Themes {
 			width: auto;
 			overflow: hidden;
 			'.(static::$round ?
-			'border-radius: 6px;
 			padding-top: 4px;
 			padding-left: 6px;
 			padding-bottom: 4px;
@@ -132,10 +131,16 @@ class Themes {
 			margin-left: auto; 
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#333' : '#eee').';
+   			background: #001da4a1;
+			'.(static::$round ?
+      			border-radius: 12px 12px 0px 12px'
 		}
 		.mo {
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#222' : '#eaeaea').';
+   			background: #0084ff61;
+			'.(static::$round ?
+   			border-radius: 12px 12px 12px 0px'
 		}
 		.r, .mw {
 			display: block;
