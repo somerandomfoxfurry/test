@@ -131,14 +131,14 @@ class Themes {
 			margin-left: auto; 
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#333' : '#eee').';
-   			background: #001da4a1;
+   			background: linear-gradient(rgb(117, 157, 236), rgb(71, 110, 188));
 			'.(static::$round ?
       			border-radius: 12px 12px 0px 12px'
 		}
 		.mo {
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#222' : '#eaeaea').';
-   			background: #0084ff61;
+   			background: linear-gradient(rgb(178 178 178), rgb(124 124 124));
 			'.(static::$round ?
    			border-radius: 12px 12px 12px 0px'
 		}
@@ -237,7 +237,7 @@ class Themes {
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			background: '.(static::$theme == 0?'#000':'#fff').';
+			background: linear-gradient(#454449, #222126);
 		}
 		.cb {
 			position: fixed;
