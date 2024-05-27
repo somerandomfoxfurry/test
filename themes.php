@@ -176,7 +176,7 @@ class Themes {
 			min-height: 42px;
 			margin: 0px;'
 			.(static::$bg ? (static::$theme == 0 ?
-			'background: #111;' : 'background: #ddd;') : '').'
+			'background: linear-gradient(360deg, #494949, #858585, #494949);' : 'background: linear-gradient(360deg, #aaa, #d5d5d5, #aaa);') : '').'
 		}
 		.cm {
 			color: '.(static::$theme == 0 ? '#ccc' : '#111').';
