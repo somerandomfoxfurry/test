@@ -231,7 +231,9 @@ class Themes {
 			width: 100%;
 			z-index: 1;
 			background: linear-gradient(#454449, #222126);
+   			color: white
 		}
+  		
 		.cb {
 			position: fixed;
 			bottom: 0;
@@ -249,9 +251,9 @@ class Themes {
 		.chr {
 			float: right;
 			text-align: right;
+   			color: 
 		}
 		.ri {
-			border-radius: 50%;
 			height: 36px;
 			width: 36px;
 		}
@@ -261,6 +263,7 @@ class Themes {
 			overflow: hidden;
 			white-space: nowrap;
 			vertical-align: top;
+   			color: white
 		}
 		.cst {
 			text-overflow: ellipsis;
