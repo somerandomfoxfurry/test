@@ -97,10 +97,10 @@ class Themes {
 			text-decoration: underline;
 		}
 		input[type=text], select, textarea {
-			'.(static::$theme == 0 ? 'background-color: black;
-			color: #eee;
-			border-color: #eee;
-			' : '').'border-style: solid;
+			 background: linear-gradient(0deg, #afadad, #eee, #afadad);
+   			 border: none;
+   			 border-radius: 48px;
+
 		}
 		.ct {
 			margin-left: 2px;
