@@ -88,6 +88,7 @@ class Themes {
 			background-repeat: no-repeat;')
 			 : '').'
 		}
+  		.ch a {color: white}
 		a {
 			'.(static::$theme == 0 ?
 			'color: #eee;' : 'color: #111;').'
