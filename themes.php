@@ -154,8 +154,7 @@ class Themes {
 			overflow: hidden;
 		}
 		.rn, .mwt {
-			'.(static::$theme == 0 ? '' : 'color: #37a1de;').
-			'overflow: hidden;
+			overflow: hidden;
 			max-width: 200px;
 			white-space: nowrap;
 			text-overflow: ellipsis;
@@ -202,9 +201,6 @@ class Themes {
 		.cbd {
 			border-bottom: 1px solid '.(static::$theme == 0 ? '#222' : '#eee').';
 		}
-		'.(static::$theme == 0 ? '' : '.ml, .mf, .mn {
-			color: #168acd;
-		}').
 		'.ma {
 			text-align: center;
 			margin-bottom: 10px;
@@ -227,9 +223,6 @@ class Themes {
 		}
 		input[type="file"] {
 			'.(static::$theme == 0 ? 'color: #eee;' : 'color: #111;').';
-		}
-		.ml {
-			color: #37a1de;
 		}
 		.ch {
 			position: fixed;
