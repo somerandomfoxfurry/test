@@ -326,6 +326,11 @@ class Themes {
 		.pre {
 			display: inline;
 		}
+  		input[type=submit], input[type=file] {
+    			color: black;
+    			border-radius: 12px;
+    			background: linear-gradient(0deg, #848484, #c6c6c6, #848484);
+		}
 		--></style>';
 	}
 }
