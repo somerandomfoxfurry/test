@@ -87,6 +87,7 @@ class Themes {
 			'background-size: cover;
 			background-repeat: no-repeat;') : '').'
 		}
+  		.ch a {color: white}
 		a {
 			'.(static::$theme == 0 ?
 			'color: #eee;' : 'color: #111;').'
@@ -96,10 +97,10 @@ class Themes {
 			text-decoration: underline;
 		}
 		input[type=text], select, textarea {
-			'.(static::$theme == 0 ? 'background-color: black;
-			color: #eee;
-			border-color: #eee;
-			' : '').'border-style: solid;
+			 background: linear-gradient(0deg, #afadad, #eee, #afadad);
+   			 border: none;
+   			 border-radius: 48px;
+
 		}
 		.ct {
 			margin-left: 2px;
@@ -116,7 +117,6 @@ class Themes {
 			width: auto;
 			overflow: hidden;
 			'.(static::$round ?
-			'border-radius: 6px;
 			padding-top: 4px;
 			padding-left: 6px;
 			padding-bottom: 4px;
@@ -131,10 +131,16 @@ class Themes {
 			margin-left: auto; 
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#333' : '#eee').';
+   			background: linear-gradient(rgb(117, 157, 236), rgb(71, 110, 188));
+			'.(static::$round ?
+      			border-radius: 12px 12px 0px 12px'
 		}
 		.mo {
 			'.(static::$bg || static::$fill ? 'background-color: ' : 'border: 1px solid ').
 			(static::$theme == 0 ? '#222' : '#eaeaea').';
+   			background: linear-gradient(rgb(178 178 178), rgb(124 124 124));
+			'.(static::$round ?
+   			border-radius: 12px 12px 12px 0px'
 		}
 		.r, .mw {
 			display: block;
@@ -148,8 +154,7 @@ class Themes {
 			overflow: hidden;
 		}
 		.rn, .mwt {
-			'.(static::$theme == 0 ? '' : 'color: #37a1de;').
-			'overflow: hidden;
+			overflow: hidden;
 			max-width: 200px;
 			white-space: nowrap;
 			text-overflow: ellipsis;
@@ -170,7 +175,7 @@ class Themes {
 			min-height: 42px;
 			margin: 0px;'
 			.(static::$bg ? (static::$theme == 0 ?
-			'background: #111;' : 'background: #ddd;') : '').'
+			'background: linear-gradient(360deg, #494949, #858585, #494949);' : 'background: linear-gradient(360deg, #aaa, #d5d5d5, #aaa);') : '').'
 		}
 		.cm {
 			color: '.(static::$theme == 0 ? '#ccc' : '#111').';
@@ -196,9 +201,6 @@ class Themes {
 		.cbd {
 			border-bottom: 1px solid '.(static::$theme == 0 ? '#222' : '#eee').';
 		}
-		'.(static::$theme == 0 ? '' : '.ml, .mf, .mn {
-			color: #168acd;
-		}').
 		'.ma {
 			text-align: center;
 			margin-bottom: 10px;
@@ -222,17 +224,16 @@ class Themes {
 		input[type="file"] {
 			'.(static::$theme == 0 ? 'color: #eee;' : 'color: #111;').';
 		}
-		.ml {
-			color: #37a1de;
-		}
 		.ch {
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			background: '.(static::$theme == 0?'#000':'#fff').';
+			background: linear-gradient(#454449, #222126);
+   			color: white
 		}
+  		
 		.cb {
 			position: fixed;
 			bottom: 0;
@@ -250,9 +251,9 @@ class Themes {
 		.chr {
 			float: right;
 			text-align: right;
+   			color: 
 		}
 		.ri {
-			border-radius: 50%;
 			height: 36px;
 			width: 36px;
 		}
@@ -261,6 +262,7 @@ class Themes {
 			overflow: hidden;
 			white-space: nowrap;
 			vertical-align: top;
+   			color: white
 		}
 		.cst {
 			text-overflow: ellipsis;
@@ -327,6 +329,11 @@ class Themes {
 			display: inline;
 			white-space: pre-wrap;
 			word-break: break-all;
+		}
+  		input[type=submit], input[type=file] {
+    			color: black;
+    			border-radius: 12px;
+    			background: linear-gradient(0deg, #848484, #c6c6c6, #848484);
 		}
 		--></style>';
 	}
